@@ -3,38 +3,23 @@
     padding: 0%;
     margin: 0%;
 }
-/* header{
+header{
     background-color: #F7FF93;
+    justify-content: center;
+    display: grid;
 }
 nav{
-    background-color:#F8ECD1;  
-}
-ul{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background-color: #F8ECD1;
     list-style-type: none;
-    width: 6%;
-    position:absolute;
-    background-color:#F8ECD1;
-    border: solid 1px;
+    flex-direction: column;
+    justify-content: space-around ;
 }
-li a{
-    display: block;
-    color: #000;
-    text-decoration: none;
-    background-color:#F8ECD1;
 
-}
-li a:hover{
-    background-color: #555;
-}
 main{
     font-family: 'Amatic SC';
     font-size: 24pt;
     font-weight: bold;
     background-color: #F8ECD1;
-    margin-left: 6%;
 }
 footer{
     padding: 50px;
@@ -60,67 +45,22 @@ img{
     flex-direction: column;
     align-items: flex-end;
 }
-#espinaca{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1%;
-}
-#pollo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1%;
-}
-#ricota{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#boloñesa{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#carbonara{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#napolitana{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#ulInicio{
-    height: 110%;
-}
-#ulQuienessomos{
-    height: 180%;
-}
-#ulRellenos{
-    height: 302%;
-}
-#ulSalsas{
-    height: 345%;
-}
-#ulContacto{
-    height: 109%;
-}
-*/
-.grilla{
-    display: grid;
-    
-}
-header{
+.header-main{
     grid-area: "header";
 }
-main{
-    grid-area: "content";
-}
-nav{
+.nav-main{
     grid-area: "nav";
 }
-footer{
+.content-main{
+    grid-area: "content";
+}
+.foot-main{
     grid-area: "footer";
+}
+.padre{
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas:"header header header"
+                        "nav content content"
+                        "footer footer footer";
 }
