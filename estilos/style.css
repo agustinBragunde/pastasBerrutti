@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/* header{
+    background-color: #F7FF93;
+}
+nav{
+    background-color:#F8ECD1;  
+}
+ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 6%;
+    position:absolute;
+    background-color:#F8ECD1;
+    border: solid 1px;
+}
+li a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    background-color:#F8ECD1;
+
+}
+li a:hover{
+    background-color: #555;
+}
+main{
+    font-family: 'Amatic SC';
+    font-size: 24pt;
+    font-weight: bold;
+    background-color: #F8ECD1;
+    margin-left: 6%;
+}
+footer{
+    padding: 50px;
+    margin-bottom: 0;
+    background-color: #F7FF93;
+}
+#videoTuto{
+    border-radius: 50px;
+    border-color: black;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.imgs{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 5%;
+    border-style: solid;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#espinaca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+#pollo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+#ricota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#boloñesa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#carbonara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#napolitana{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ulInicio{
+    height: 110%;
+}
+#ulQuienessomos{
+    height: 180%;
+}
+#ulRellenos{
+    height: 302%;
+}
+#ulSalsas{
+    height: 345%;
+}
+#ulContacto{
+    height: 109%;
+}
+*/
+.grilla{
+    display: grid;
+    
+}
+header{
+    grid-area: "header";
+}
+main{
+    grid-area: "content";
+}
+nav{
+    grid-area: "nav";
+}
+footer{
+    grid-area: "footer";
+}
