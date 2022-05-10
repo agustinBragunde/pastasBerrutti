@@ -6,15 +6,27 @@
 header{
     background-color: #F7FF93;
     justify-content: center;
-    display: grid;
+    border: 1px solid;
+    border-color: black;
 }
-nav{
+nav ul{
     background-color: #F8ECD1;
-    list-style-type: none;
-    flex-direction: column;
-    justify-content: space-around ;
+    display:flex;
+    flex-direction: row ;
+    border: 1px solid;
+    border-color: black;
 }
-
+nav ul li{
+    list-style: none;
+    margin-inline: 2%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    background-color: #555;
+}
 main{
     font-family: 'Amatic SC';
     font-size: 24pt;
@@ -22,9 +34,11 @@ main{
     background-color: #F8ECD1;
 }
 footer{
-    padding: 50px;
-    margin-bottom: 0;
     background-color: #F7FF93;
+    padding: 5%;
+    text-align: center;
+    border: 1px solid;
+    border-color: black;
 }
 #videoTuto{
     border-radius: 50px;
@@ -35,8 +49,8 @@ img{
     max-height: 100%;
 }
 .imgs{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin-bottom: 5%;
     border-style: solid;
 }
@@ -45,22 +59,148 @@ img{
     flex-direction: column;
     align-items: flex-end;
 }
-.header-main{
-    grid-area: "header";
+#espinaca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
 }
-.nav-main{
-    grid-area: "nav";
+#pollo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
 }
-.content-main{
-    grid-area: "content";
+#ricota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.foot-main{
-    grid-area: "footer";
+#boloñesa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.padre{
-    grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    grid-template-areas:"header header header"
-                        "nav content content"
-                        "footer footer footer";
+#carbonara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#napolitana{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.padre-main{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "content"
+    "footer"; 
+}
+
+.header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+    justify-content:space-around ;
+}
+.content{
+    grid-area: content;
+}
+.footer{
+    grid-area: footer;
+}
+@media (min-width:500px){
+    .padre-main{
+    display:grid;
+    grid-template-columns: 0,5 2fr;
+    grid-template-areas:
+    "header header"
+    "nav content"
+    "footer footer";
+    }
+    .nav{
+        display:flex;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-left:1px solid;
+        border-color: black;
+        border-right:1px solid;
+        border-color: black;
+        }
+        header{
+            border: 1px solid;
+            border-color: black;
+        }
+        footer{
+            border: 1px solid;
+            border-color: black;
+        }
+}
+@media (min-width:700px){
+    .padre-main{
+        display:grid;
+        grid-template-columns: 0,2fr 2fr 1fr;
+        grid-template-areas:
+        "header header header"
+        "nav content content"
+        "footer footer footer";
+        }
+        .nav{
+            display:flex;
+        }
+        nav ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-left:1px solid;
+            border-color: black;
+            border-right:1px solid;
+            border-color: black;
+        }
+        header{
+            border: 1px solid;
+            border-color: black;
+        }
+        footer{
+            border: 1px solid;
+            border-color: black;
+        }
+}
+@media(min-width:900px){
+    .padre-main{
+        display:grid;
+        grid-template-columns: 0,5fr 4fr 1fr;
+        grid-template-areas:
+        "header header header"
+        "nav content content"
+        "footer footer footer";
+        }
+        .nav{
+            display:flex;
+        }
+        nav ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-left:1px solid;
+            border-color: black;
+            border-right:1px solid;
+            border-color: black;
+            }
+            header{
+                border: 1px solid;
+                border-color: black;
+            }
+            footer{
+                border: 1px solid;
+                border-color: black;
+            }
 }
