@@ -9,30 +9,12 @@ header{
     border: 1px solid;
     border-color: black;
 }
-nav ul{
-    background: rgb(34,193,195);
-    background: linear-gradient(190deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    display:flex;
-    flex-direction: row ;
-    border: 1px solid;
-    border-color: black;
-}
-nav ul li{
-    list-style: none;
-    margin-inline: 2%;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
 
 main{
     font-family: 'Amatic SC';
     font-size: 24pt;
     font-weight: bold;
-    background: rgb(34,193,195);
-    background: linear-gradient(153deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    /*background-color: #F8ECD1;*/
+    background-image: url(../img/closeup-of-tasty-italian-ravioli.jpg) ;
 }
 footer{
     background-color: #F7FF93;
@@ -114,7 +96,6 @@ img{
 }
 .nav{
     grid-area: nav;
-    justify-content:space-around ;
 }
 .content{
     grid-area: content;
@@ -131,18 +112,6 @@ img{
     "nav content"
     "footer footer";
     }
-    .nav{
-        display:flex;
-    }
-    nav ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        border-left:1px solid;
-        border-color: black;
-        border-right:1px solid;
-        border-color: black;
-        }
         header{
             border: 1px solid;
             border-color: black;
@@ -160,18 +129,6 @@ img{
         "header header header"
         "nav content content"
         "footer footer footer";
-        }
-        .nav{
-            display:flex;
-        }
-        nav ul{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            border-left:1px solid;
-            border-color: black;
-            border-right:1px solid;
-            border-color: black;
         }
         header{
             border: 1px solid;
@@ -191,18 +148,6 @@ img{
         "nav content content"
         "footer footer footer";
         }
-        .nav{
-            display:flex;
-        }
-        nav ul{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            border-left:1px solid;
-            border-color: black;
-            border-right:1px solid;
-            border-color: black;
-            }
             header{
                 border: 1px solid;
                 border-color: black;
@@ -211,4 +156,11 @@ img{
                 border: 1px solid;
                 border-color: black;
             }
+}
+.bottom{
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
 }
