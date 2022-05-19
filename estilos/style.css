@@ -14,7 +14,9 @@ main{
     font-family: 'Amatic SC';
     font-size: 24pt;
     font-weight: bold;
+    background-image:unset;
     background-image: url(../img/closeup-of-tasty-italian-ravioli.jpg) ;
+    
 }
 footer{
     background-color: #F7FF93;
@@ -83,18 +85,17 @@ img{
 }
 .padre-main{
     display:grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     grid-template-areas: 
-    "header"
-    "nav"
-    "content"
-    "footer"; 
+    "header header"
+    "nav content"
+    "footer footer"; 
 }
 
 .header{
     grid-area: header;
 }
-.nav{
+nav{
     grid-area: nav;
 }
 .content{
@@ -108,9 +109,9 @@ img{
     display:grid;
     grid-template-columns:auto 1fr 1fr;
     grid-template-areas:
-    "header header"
-    "nav content"
-    "footer footer";
+    "header header header"
+    "nav content content"
+    "footer footer footer";
     }
         header{
             border: 1px solid;
