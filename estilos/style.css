@@ -1,157 +1,197 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
-*{
-    padding: 0%;
-    margin: 0%;
-}
-.nav{
-    background-color: #F7FF93;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap");
+#boloñesa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main{
-    font-family: 'Amatic SC';
-    font-size: 24pt;
-    font-weight: bold;
-    background-image:unset;
-    background-image: url(../img/closeup-of-tasty-italian-ravioli.jpg) ;
-    
+#carbonara {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-footer{
-    background-color: #F7FF93;
-    padding: 5%;
-    text-align: center;
+
+#napolitana {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.relleno-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1%;
+}
+
+.relleno-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1%;
+}
+
+.relleno-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1%;
+}
+
+.padre-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+      grid-template-areas: "header" "content" "footer";
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: content;
+}
+
+.footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+@media (min-width: 500px) {
+  .padre-main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1fr 1fr;
+        grid-template-columns: auto 1fr 1fr;
+        grid-template-areas: "header header header" "content content content" "footer footer footer";
+  }
+  header {
     border: 1px solid;
     border-color: black;
-}
-#videoTuto{
-    border-radius: 50px;
+  }
+  footer {
+    border: 1px solid;
     border-color: black;
+  }
 }
 
-img{
-    max-width: 100%;
-    max-height: 100%;
-}
-.imgs{
-    width: 300px;
-    height: 300px;
-    margin-bottom: 5%;
-    border-style: solid;
-}
-.logo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.logo:hover{
-    transform: scale(0.5);
-    transition-property: all;
-    transition-duration:4s ;
-}
-
-#espinaca{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1%;
-}
-#pollo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1%;
-}
-#ricota{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#boloñesa{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#carbonara{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#napolitana{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.padre-main{
-    display:grid;
-    grid-template-columns: auto auto;
-    grid-template-areas: 
-    "header header"
-    "content content"
-    "footer footer"; 
-}
-
-.header{
-    grid-area: header;
-}
-nav{
-    grid-area: nav;
-}
-.content{
-    grid-area: content;
-}
-.footer{
-    grid-area: footer;
-}
-@media (min-width:500px){
-    .padre-main{
-    display:grid;
-    grid-template-columns:auto 1fr 1fr;
-    grid-template-areas:
-    "header header header"
-    "content content content"
-    "footer footer footer";
-    }
-        header{
-            border: 1px solid;
-            border-color: black;
-        }
-        footer{
-            border: 1px solid;
-            border-color: black;
-        }
-}
-@media (min-width:700px){
-    .padre-main{
-        display:grid;
+@media (min-width: 700px) {
+  .padre-main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr 1fr;
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-areas:
-        "header header header"
-        "content content content"
-        "footer footer footer";
-        }
-        header{
-            border: 1px solid;
-            border-color: black;
-        }
-        footer{
-            border: 1px solid;
-            border-color: black;
-        }
+        grid-template-areas: "header header header" "content content content" "footer footer footer";
+  }
+  header {
+    border: 1px solid;
+    border-color: black;
+  }
+  footer {
+    border: 1px solid;
+    border-color: black;
+  }
 }
-@media(min-width:900px){
-    .padre-main{
-        display:grid;
+
+@media (min-width: 900px) {
+  .padre-main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr 2fr;
         grid-template-columns: 2fr 2fr 2fr;
-        grid-template-areas:
-        "header header header"
-        "content content content"
-        "footer footer footer";
-        }
-            header{
-                border: 1px solid;
-                border-color: black;
-            }
-            footer{
-                border: 1px solid;
-                border-color: black;
-            }
+        grid-template-areas: "header header header" "content content content" "footer footer footer";
+  }
+  header {
+    border: 1px solid;
+    border-color: black;
+  }
+  footer {
+    border: 1px solid;
+    border-color: black;
+  }
 }
+
+#videoTuto {
+  border-radius: 50px;
+  border-color: black;
+}
+
+.imgs {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 5%;
+  border-style: solid;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.nav {
+  background-color: #FFF1BD;
+}
+
+main {
+  font-family: 'Nunito', sans-serif;
+  font-size: 21pt;
+  font-weight: bold;
+}
+
+.fondo {
+  background: url(../img/fondo.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+footer {
+  background-color: #FFF1BD;
+  padding: 2%;
+  text-align: center;
+  border: 1px solid;
+  border-color: black;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+$i:1;
+@for $i from 1 through 3{
+    .relleno-#{$i}{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1%; 
+    }
+
+}
+
+
