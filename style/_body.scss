@@ -2,24 +2,29 @@
     padding: 0%;
     margin: 0%;
 }
-.nav{
-    background-color: #FFF1BD;
+body{
+    .nav{
+        background-color: #FFF1BD;
+    }
+    main{
+        font-family: 'Nunito', sans-serif;
+        font-size: 21pt;
+        font-weight: bold;
+        .fondo{
+            background: url(../img/fondo.jpg) no-repeat center center fixed ;
+            background-size: cover;
+        } 
+    }
+    
+    footer{
+        background-color: #FFF1BD;
+        padding: 2%;
+        text-align: center;
+        border: 1px solid;
+        border-color: black;
+    }
 }
 
-main{
-    font-family: 'Nunito', sans-serif;
-    font-size: 21pt;
-    font-weight: bold;
-}
-.fondo{
-    background: url(../img/fondo.jpg) no-repeat center center fixed ;
-    background-size: cover;
-}
-footer{
-    background-color: #FFF1BD;
-    padding: 2%;
-    text-align: center;
-    border: 1px solid;
-    border-color: black;
-}
+
+
 
