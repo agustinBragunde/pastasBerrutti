@@ -10,12 +10,8 @@ body{
         font-family: 'Nunito', sans-serif;
         font-size: 21pt;
         font-weight: bold;
-        .fondo{
-            background: url(../img/fondo.jpg) no-repeat center center fixed ;
-            background-size: cover;
-        } 
+        
     }
-    
     footer{
         background-color: #FFF1BD;
         padding: 2%;
@@ -24,7 +20,9 @@ body{
         border-color: black;
     }
 }
-
-
+.fondo{
+    background: url(../img/fondo.jpg) no-repeat center center fixed;
+    background-size: cover;
+} 
 
 
