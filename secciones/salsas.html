@@ -45,80 +45,40 @@
           </nav>
     </header>    
     <main class="content">
-      <div class="accordion accordion-flush" id="accordionFlushExample">
         <h1>"La Salsa"</h1>
         <p>
           Preparación más o menos líquida, caliente o fría, que acompaña o sirve para cocinar un manjar. La función de una salsa es añadir a este último un sabor que se armonice con el suyo.
         </p>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Salsa Boloñesa
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">La boloñesa es una de las salsas para pasta más tradicionales y clásicas de la gastronomía italiana. Como su propio nombre indica, tiene su origen en la ciudad de Boloña, desde donde se ha extendido por el mundo entero. La salsa boloñesa es una de las más famosas y populares del recetario tradicional italiano.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Salsa Carbonara
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Otra de las salsas para pasta más populares del planeta es la salsa carbonara, cuyo origen se encuentra en la mismísima Roma. Huevo, queso Parmesano y Pecorino, panceta, mantequilla, ajo, sal y pimienta negra son los ingredientes que "La cuchara de plata" recoge para esta tradicional receta.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Salsa Napolitana
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">La salsa napolitana es una salsa de tomate enriquecida con ajo y distintos tipos de hierbas, como orégano, albahaca y en algunos casos perejil. En Italia se la denomina sugo di pomodoro alla napoletana, es decir, salsa de tomate a la napolitana, y también salsa marinara. Extendida sobre una base de pizza da lugar a la famosa pizza marinara, pero se puede usar para cualquier tipo de pasta, espolvoreando abundante queso Parmesano o Pecorino.</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="../img/boloñesa.jpg" class="d-block w-100" alt="..." height="600px">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Salsa Boloñesa</h5>
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col mb-4">
+            <div class="card">
+              <img src="../img/boloñesa.jpg" class="card-img-top" alt="Salsa Boloñesa">
+              <div class="card-body">
+                <h5 class="card-title">Salsa Boloñesa</h5>
+                <p class="card-text">La boloñesa es una de las salsas para pasta más tradicionales y clásicas de la gastronomía italiana. Como su propio nombre indica, tiene su origen en la ciudad de Boloña, desde donde se ha extendido por el mundo entero. La salsa boloñesa es una de las más famosas y populares del recetario tradicional italiano.</p>
+              </div>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="20000">
-            <img src="../img/carbonara.jpg" class="d-block w-100" alt="..." height="600px">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Salsa Carbonara</h5>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="../img/carbonara.jpg" class="card-img-top" alt="Salsa Carbonara">
+              <div class="card-body">
+                <h5 class="card-title">Salsa Carbonara</h5>
+                <p class="card-text">Otra de las salsas para pasta más populares del planeta es la salsa carbonara, cuyo origen se encuentra en la mismísima Roma. Huevo, queso Parmesano y Pecorino, panceta, mantequilla, ajo, sal y pimienta negra son los ingredientes que "La cuchara de plata" recoge para esta tradicional receta.</p>
+              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="../img/napolitana.jpg" class="d-block w-100" alt="..." height="600px">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Salsa Napolitana</h5>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="../img/napolitana.jpg" class="card-img-top" alt="Salsa Napolitana">
+              <div class="card-body">
+                <h5 class="card-title">Salsa Napolitana</h5>
+                <p class="card-text">La salsa napolitana es una salsa de tomate enriquecida con ajo y distintos tipos de hierbas, como orégano, albahaca y en algunos casos perejil. En Italia se la denomina sugo di pomodoro alla napoletana, es decir, salsa de tomate a la napolitana, y también salsa marinara. Extendida sobre una base de pizza da lugar a la famosa pizza marinara, pero se puede usar para cualquier tipo de pasta, espolvoreando abundante queso Parmesano o Pecorino.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-    </div>
+        </div> 
+    </main>  
     <footer class="footer">
         <h2>Todos los derechos reservados.</h2>
         <h3>Santa Rosa, Canelones, Uruguay</h3>
